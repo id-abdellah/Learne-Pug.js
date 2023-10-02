@@ -1,0 +1,35 @@
+doctype 
+html 
+
+    head 
+        title dealing with attr part-2 
+
+    body 
+
+        form(action="") 
+            // بحال هاكا attributes تقد تكتب ال
+            input(class="input", type="text", name="username")
+            // اولا بحال هكا
+            input(
+                class="input", 
+                type="email", 
+                name="email"
+            )
+            input(
+                class="input", 
+                type="text", 
+                name="subject"
+            )
+            button send 
+
+            // تقد تكتبو بحال هكا style attr حتا بالنسبة لل
+
+            button(style="background-color: red; color: white")
+
+            // فالجافاسكريبت object اولا تقد تكتبو بطريقة ال
+            
+            div(style={
+                "background-color": "white", 
+                "color": "blue", 
+                "font-size": "20px"
+            })
