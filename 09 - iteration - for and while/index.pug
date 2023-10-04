@@ -1,0 +1,20 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+
+        //- js ديال ال syntax بال loop كتكتب ال
+        //- فلول hyphen و كتسبق
+        ul.items
+            - for (let i = 0; i < 10; i++)
+                li(class="item-" + i) item [#{i}]
+
+
+        //- while loop هادي هي طريقة كتابة ال
+        //- فلول hyphen باش يخدم خاصك متسبقش ليه
+        - var x = 0;
+        ul.secondItems
+            while x < 10
+                li= x++

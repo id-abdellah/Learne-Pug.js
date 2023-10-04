@@ -1,0 +1,22 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+        //- pugJs ميزة قوية فال include دبا ال
+        //- html file و دخلهم فاي بلاصة بغيتي فال pug file كديرهم ف html file. فبدل متستدعيهم فكل style links. الاستعمال ديال هي انك مثلا عندك بزاف ديال لي
+
+        //- هنايا include فملف خارجي و درنا ليهم styles دبا فهادي عندنا هاد
+
+        include includes/styles.pug
+
+    body 
+
+        div this is first div 
+        div this is second div 
+
+
+        //- نفس القضية
+
+        include includes/scripts.pug

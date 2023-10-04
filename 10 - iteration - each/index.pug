@@ -1,0 +1,34 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+
+        //- pugJs خاص بال each syntax اولا ال
+        //- loop تقد تاخذ العناصر لي لداخل ودير عليه array or object javascript يعني لعند
+
+
+    //- هدا مثال على مصفوفة قيم
+    //- كما تلاحظ تقد تجد تا الاندكس ديال ال قيمة ماشي غا القيمة ديال العنصر
+    //- و انما تقد تحطها فمتغير لفوق وتستدعيها each. فسطر ال array وماشي ضروري تحط ال
+
+    div.containers
+        each value, valueIndex in ["one", "two", "three", "four"]
+            div.item= value + " : " + valueIndex
+        
+
+    
+
+    //- باش تشيك واش المصفوفة خاوية ولا عامرة if statment وتقد حتا دير
+    //- هادي فلحالة الا كانت عامرة
+    - let myArr = ["hello", "bro", "how", "are", "you"];
+    div.containers-2 
+        each val in myArr.length ? myArr : ["ther is no elements"]
+            div.item= val
+
+    //- او هادي فلحالة الا كانت خاوية
+    - let myArr2 = [];
+    div.containers-2 
+        each val in myArr2.length ? myArr2 : ["ther is no elements"]
+            div.item= val
