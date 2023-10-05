@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        include myVars/vars
+
+        ul.items 
+            li php #{themeName} <!-- Obito -->
+
+            //- power of js. كما قلنا من قبل عندك ال
+            //- string methods اذا تقد تستعملها هنا. مثلا هاد المثال يمكن ليك تستعمل ال
+
+            li css #{themeName.toUpperCase()} <!-- OBITO -->
+            li js  #{themeName.slice(-2).repeat(2)} <!-- toto -->
+
+
+
+            // عندنا جوج انواع string interpolation بالنسبة لل
+            // escaped string & unescaped string
+
+            // string يعني طبع التاج على شكل escaped خلاه interpolation ملي درناه فال bold tage. فمثلا حنا عندنا متغير فيه
+            li html #{boldTag} <!-- html &lt;b&gt;Bold&lt;/b&gt; -->
+
+            // syntax of interpolation خاص دير هاد ال real tag & not escaped باش تخليه اطبعو ك
+            li tailwind !{boldTag} <!-- tailwind <b>Bold</b> -->
+            li git
+            li githu
+
+        
+        //-
+            escaped iterpolation اذا الا بغيتي
+                #{varName}
+            unescaped interpolation اما الا بغيتي
+                !{varName}

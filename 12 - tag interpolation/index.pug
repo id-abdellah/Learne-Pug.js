@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+
+
+    // escape هادو جوج طرق اخرين با شدير
+    div.firstOne \#{hello}
+
+    div.secondOne #{"<b>Helo</b>"}
+
+
+    // tag interpolation اما بالنسبة لل
+    // فهاد هي الطريقة المختصر و الناضية باش دير عنصر مع سياق النص
+    p.inter hello this is #[b.boldText bold] and this is #[i italic]
