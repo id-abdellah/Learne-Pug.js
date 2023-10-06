@@ -1,0 +1,18 @@
+include myMixins/mixins.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+
+        // bugJs فال mixinx وهادي هي الطريقة ديال استعداء الم
+        +listOfSkills
+
+
+        // mixins with arguments استدعاء ال
+
+        +features("hello iam the same feature")
+        
+        +img("https://googlImage.com", "just a normal img")

@@ -1,0 +1,18 @@
+//- pug mixin syntax هدا هوا ال
+
+mixin listOfSkills
+    ul.hello
+        li PHP
+        li MySQL
+        li JavaScript
+
+
+//- mixins with arguments
+
+mixin features(featureName)
+    div= featureName
+    div.another #{featureName}
+
+
+mixin img(href, alt)
+    img(href=href alt=alt)
